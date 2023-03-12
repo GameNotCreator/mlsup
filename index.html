@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ML App</title>
+    <style>
+        .container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        }
+        input[type="file"] {
+          position: absolute;
+          z-index: -1;
+          top: 15px;
+          left: 20px;
+          font-size: 17px;
+          color: #b8b8b8;
+        }
+        .button-wrap {
+          position: relative;
+        }
+        .button {
+          display: inline-block;
+          background-color: #585858;
+          border-radius: 10px;
+          border: 4px double #cccccc;
+          color: #ffffff;
+          text-align: center;
+          font-size: 20px;
+          padding: 8px;
+          width: 100px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+        .button:hover {
+          background-color: #363636;
+        }
+      </style>
+</head>
+<body>
+    <center>
+        <h1 style="color:black;font-family: 'Courier New', Courier, monospace;">ML APP VIEWER</h1>
+        <label for="myfile" style="font-family: 'Courier New', Courier, monospace;">Select a file (XLSX, CSV) :</label>
+        <center>
+          <div class="container">
+            <div class="button-wrap">
+              <label class="button" for="upload" style="font-family: 'Courier New', Courier, monospace;font-size: 13px;">Upload File:</label>
+              <input id="upload" type="file">
+            </div>
+          </div>    
+          <div class="container">
+            <input type="text" name="city" list="cityname">
+            <datalist id="cityname">
+                <option value="Boston">
+                <option value="Cambridge">
+            </datalist>
+          </div>    
+          <div class="container">   
+            <input type="text" name="city" list="cityname">
+            <datalist id="cityname">
+                <option value="Boston">
+                <option value="Cambridge">
+            </datalist>
+          </div>    
+          <div class="container">
+            <input type="text" name="algorythme" list="choixdelalgorythme">
+            <datalist id="algo">
+                <option value="Boston">
+                <option value="Cambridge">
+            </datalist>
+          </div>    
+          <div class="container">
+            <div class="button-wrap">
+              <label class="button" for="submit" style="font-family: 'Courier New', Courier, monospace;font-size: 13px;">Submit</label>
+            </div>
+          </div>    
+          </center>
+    </center>
+</body>
+</html>
